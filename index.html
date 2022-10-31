@@ -8,12 +8,19 @@
 <button onclick="document.getElementById('myImage').src='https://www.tutch.co.uk/assets/images/bulbon.gif'">Lights On</button>
 <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
 <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Lights Off</button>
- 
- 
- <p id ="functions"></p>
+ <p id="names"></p>
+ <script>
+ function nameFunction(arg1, arg2) {
+  this.firstName = arg1;
+  this.lastName  = arg2;
+}
+const Name = new nameFunction("Valerie","Joplin")
+document.getElementById("names").innerHTML = Name.firstName; 
+</script>
+ <p id ="dates"></p>
    <script>
     const date = new Date();
-    document.getElementById("functions").innerHTML = date;
+    document.getElementById("dates").innerHTML = date;
   </script>
 
 </body>
