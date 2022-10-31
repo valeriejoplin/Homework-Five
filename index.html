@@ -4,19 +4,21 @@
 <body style="text-align:center;">
 <h2>Introduction to JavaScript</h2>
 <h6> Explore your BRIGHT ideas with JavaScript </h6>
-
+ 
 <button onclick="document.getElementById('myImage').src='https://www.tutch.co.uk/assets/images/bulbon.gif'">Lights On</button>
 <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
 <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Lights Off</button>
- <p id="names">Hi, my name is</p>
+
+ <p id="names"></p>
  <script>
- function nameFunction(arg1, arg2) {
-  this.firstName = arg1;
-  this.lastName  = arg2;
+ function fullName(firstname, lastname) {
+  this.firstName = firstname;
+  this.lastName  = lastname;
 }
-const Name = new nameFunction("Valerie","Joplin")
+const Name = new fullName("Valerie","Joplin")
 document.getElementById("names").innerHTML = Name.firstName + " " + Name.lastName; 
 </script>
+
  <p id ="dates"></p>
    <script>
     const date = new Date();
