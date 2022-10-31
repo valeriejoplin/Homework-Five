@@ -6,15 +6,25 @@
 <h6> Explore your BRIGHT ideas with JavaScript </h6>
 
 <button onclick="document.getElementById('myImage').src='https://www.tutch.co.uk/assets/images/bulbon.gif'">Lights On</button>
-
 <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
-
 <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Lights Off</button>
-  <p id ="newDate"></p>
+ 
+ 
+ <p id ="functions"></p>
   <script>
-const date = new Date();
-document.getElementById("newDate").innerHTML = date;
-</script>
+    const returnThis = {
+      firstName: "Valerie",
+      lastName: "Joplin",
+      fullName: function() {
+        return this.firstName + " " +
+      this.lastName;
+      }
+     }
+     document.getElementById("functions").innerHTML = returnThis.fullName();
+    const date = new Date();
+    document.getElementById("functions").innerHTML = date;
+  </script>
+
 </body>
 </html>
 
