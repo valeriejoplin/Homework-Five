@@ -7,20 +7,20 @@ require_once("header.html");
 <body style="text-align:center;">
 <h2>Introduction to JavaScript</h2>
 <h6> Explore your BRIGHT ideas with JavaScript </h6>
- 
 <button onclick="document.getElementById('myImage').src='https://www.tutch.co.uk/assets/images/bulbon.gif'">Lights On</button>
 <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
 <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Lights Off</button>
 
- <p id="names"></p>
- <script>
- function fullName(firstname, lastname) {
-  this.firstName = firstname;
-  this.lastName  = lastname;
-}
-const Name = new fullName("Valerie","Joplin")
-document.getElementById("names").innerHTML = Name.firstName + " " + Name.lastName; 
-</script>
+    <div class="container">
+      <p id="placeholder"></p>
+      <button class="btn" onclick='BrightIdea()'>Light Bulb</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+      function BrightIDea() {
+        document.getElementById('placeholder').innerHTML = 'This is the value';
+      }
+    </script>
 
  <p id ="dates"></p>
    <script>
