@@ -41,7 +41,6 @@ function temperatureConverter(degree) {
   document.getElementById("outputCelcius").innerHTML=(degree-32)/1.8;
 }
 </script>
- <button class="btn" onclick='doMath()'>Let's do Math</button>
 
     <form>
         First Number<br>
@@ -50,18 +49,16 @@ function temperatureConverter(degree) {
         Second Number:<br>
         <input id="num2" type="text" name="num2">
         <br><br>
-      <input type="button" value="Do Maths" onclick="doMath();" />
+      <input type="button" value="Let's do math!" onclick="doMath();" />
     </form>
 
   <script>
 
-      function doMath() {
-          var numOne = document.getElementById('num1').value;
-          var numTwo = document.getElementById('num2').value;
-          var theProduct = parseInt(my_input1) * parseInt(my_input2);  document.write(theProduct);
-          document.write(theProduct);
-
-
+function doMath() {
+  var numOne = document.getElementById('num1').value;
+  var numTwo = document.getElementById('num2').value;
+  var theProduct = parseInt(numOne) * parseInt(numTwo);
+  document.write(theProduct);
 }
 
   </script>
