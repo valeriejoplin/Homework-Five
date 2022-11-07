@@ -31,7 +31,21 @@ require_once("header.html");
     document.getElementById("dates").innerHTML = date;
     }
   </script>
+<h2>Temperature Converter</h2>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
 
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter(degree) {
+  degree = parseFloat(degree);
+  document.getElementById("outputCelcius").innerHTML=(degree-32)/1.8;
+}
+</script>
 </body>
 </html>
 
