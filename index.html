@@ -63,6 +63,19 @@ function temperatureConverter(degree) {
           }
 
   </script>
+
+
+
+    <div class="container">
+ <p id ="random">Pick a number between 1-100!!</p>
+ <button class="btn" onclick='RandomNumber()'>Random Number Generator</button>
+ </div>
+<script>
+   function RandomNumber() {
+document.getElementById("random").innerHTML =
+Math.floor(Math.random() * 10);
+   }
+</script>
 </body>
 </html>
 
